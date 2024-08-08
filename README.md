@@ -19,6 +19,8 @@ JWT_SECRET=your_jwt_secret
 
 # JWT expiration time (e.g., 1h, 2d)
 JWT_EXPIRES=1h
+
+
 API Endpoints
 The API provides the following endpoints:
 
