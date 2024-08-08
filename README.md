@@ -1,5 +1,5 @@
 Clone the repository:
-git clone https://github.com/your-username/todoapi.git
+git clone https://github.com/Eman-Qadry/toDoAPI.git
 cd todoapi
 -Install dependencies:
 =npm install
