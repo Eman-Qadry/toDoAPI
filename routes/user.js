@@ -72,7 +72,7 @@ router
 router.post('/forgotpassword',authcontroller.forgotpassword);
 
 
-router.post( '/resetpassword',authcontroller.resetToken);
+router.post( '/resetpassword/:token',authcontroller.resetToken);
 
 router
 .route('/users/profile')

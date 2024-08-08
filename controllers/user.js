@@ -87,18 +87,14 @@ exports.editUser=(req,res,next)=>{
 };
 
 exports.editpassword=(req,res,next)=>{
-    try{
-        const errors = validationResult(req);}
-        catch(err){
-        console.log('crashed');
-        }
-    // if (!error.isEmpty()){
-    //     const error =new Error('validation failed!');
-    //     error.statusCode=422;
-    //     error.data=errors.array();
-    //     throw error;
-    
-    // }
+  
+        const error = validationResult(req);
+       
+    if (!error.isEmpty()){
+        const errors =new Error('validation failed!');
+        errors.statusCode=422;
+        errors.data=error.array();
+        throw errors;   }
 const userId=req.userId;
 const oldpassword=req.body.oldpassword;
 const newpassword=req.body.newpassword;
